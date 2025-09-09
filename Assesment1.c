@@ -3,18 +3,20 @@ int main()
 {
 int choice,quantity,amount;
     int Pizza_price = 180;
-    int Burger_price = 100;
+    int Burger_price = 150;
     int Dosa_price = 120;
     int Idli_price = 50;
     char ans;
     int total = 0;
-
-    printf("1.Pizza     Pizza_price=180rs/pcs");
-    printf("\n2.Burger    Burger_Price=100rs/pcs");
-    printf("\n3.Dosa      Dosa_Price=120rs/pcs");
-    printf("\n4.Idli     Idali_Price=50rs/pcs");
 do
 {
+
+    printf("1.Pizza     Pizza_price=180rs/pcs");
+    printf("\n2.Burger    Burger_Price=150rs/pcs");
+    printf("\n3.Dosa      Dosa_Price=120rs/pcs");
+    printf("\n4.Idli     Idali_Price=50rs/pcs");
+
+
     printf("\nenter your choice::");
     scanf("%d", &choice);
 
@@ -24,13 +26,13 @@ do
         printf("\nenter the quantity:");
         scanf("%d", &quantity);
         amount = Pizza_price * quantity;
-        printf("amount ia %d", amount);
+        printf("amount is %d", amount);
     }
     else if (choice == 2)
     {
         printf("you have selected Burger");
         printf("\n enter the quantity:");
-        scanf("%d", &choice);
+        scanf("%d",&quantity);
         amount = Burger_price * quantity;
         printf("amount is %d", amount);
     }
